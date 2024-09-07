@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Make an Appointment</title>
+    <style>
+    h2 {text-align: center;}
+    body{
+    background-image: url("https://cialarm.com/wp-content/uploads/2018/04/shutterstock_475126960-1024x653.jpg");
+        background-size: cover;}
+    form {
+  max-width: 800px;
+  margin: 10 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  
+}
+.form-center form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+input[type=text], input[type=email], input[type=time], input[type=date],input[type=textarea] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+    <h2>MAKE AN APPOINTMENT</h2>
+    <div class="form-center">
+    <form action="appointmentservlet" method="post">
+    
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" required><br>
+        <label for="date">Date:</label>
+        <input type="date" name="date" required><br>
+        <label for="time">Time:</label>
+        <input type="time" name="time" required><br>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>

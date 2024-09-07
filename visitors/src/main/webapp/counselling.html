@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counseling Services</title>
+    <style>
+    h2 {text-align: center;}
+    body{
+    background-image: url("https://cdn.pixabay.com/photo/2022/06/17/17/30/counselling-7268461__340.png");
+        background-size: cover;}
+    form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.form-center form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+input[type=text], input[type=email], input[type=text], input[type=text],input[type=textarea] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+    <h2>COUNSELLING SERVICES</h2>
+    <div class="form-center">
+    <form action="counsellingServlet" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" required><br>
+        <label for="message">Message:</label>
+        <textarea name="message" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>
